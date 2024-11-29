@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
 a {
   text-decoration: none;
 }
