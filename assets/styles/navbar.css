@@ -37,7 +37,7 @@ ul {
 }
 header {
   position: relative;
-  padding: 20px 0;
+  padding: 15px 0;
   border: 1px solid var(--black);
 }
 header .container{
