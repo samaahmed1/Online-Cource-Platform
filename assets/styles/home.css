@@ -79,4 +79,36 @@ img {
   width: 100%;
   border-radius: 50px;
 }
+.features {
+  padding: 50px 0;
+}
+.features .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+.features .feature {
+  width: 389px;
+  padding: 54px 29px;
+  background-color: var(--gainsboro);
+  border-radius: 50px;
+  text-align: center;
+}
+.features .feature span {
+  display: block;
+  margin: 24px 0;
+}
+.features .feature p {
+  font-size: 15px;
+}
+@media(max-width:992px){
+  .features .container {
+    flex-wrap:wrap ;
+  }
+  .features .feature {
+    width: 100%;
+  }
+}
+
 
