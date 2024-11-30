@@ -7,6 +7,9 @@
   --black: #000000;
   --white: #ffffff;
 }
+body{
+  font-family: "Roboto", sans-serif;
+}
 a {
   text-decoration: none;
 }
@@ -32,3 +35,95 @@ ul {
     width: 1170px;
   }
 }
+header {
+  position: relative;
+  padding: 20px 0;
+  border: 1px solid var(--black);
+}
+header .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .container .logo{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+header .container .logo img{
+  width: 38px;
+}
+header .container .logo a{
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--black);
+}
+header .container ul{
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+header nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--black);
+}
+header nav ul li .search-input {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  padding: 8px;
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 6px;
+}
+header nav ul li .search-input input {
+ outline: none;
+ border: none;
+}
+header .container .toggle img{
+  cursor: pointer;
+}
+header nav input {
+  appearance: none;
+}
+@media (max-width: 991px) {
+  header .container nav ul {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    padding: 10px;
+    background-color: var(--white);
+    border: 1px solid rgb(0 0 0 / 0.1);
+  }
+  header nav ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid rgb(0 0 0 / 0.1);
+  }
+  header nav input:checked + ul {
+    display: block;
+  }
+}
+@media (max-width: 400px) {
+  header .container .logo a{
+    font-size: 21px;
+  }
+}
+@media (min-width: 992px) {
+  header nav .toggle {
+    display: none;
+  }
+  header nav ul {
+    display: flex;
+  }
+} 
+
+
+
+
+
+
+
+
+
+
