@@ -72,3 +72,11 @@ img {
   background-color: var(--white);
   border-radius: 50px;
 }
+.banner {
+  padding-top: 50px;
+}
+.banner img {
+  width: 100%;
+  border-radius: 50px;
+}
+
