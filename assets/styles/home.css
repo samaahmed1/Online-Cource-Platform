@@ -110,15 +110,12 @@ img {
     width: 100%;
   }
 }
-.our-Learners {
-  padding-top: 200px;
-}
 .our-Learners h2 {
   text-align: center;
   font-family: "Poppins", serif;
   font-size: 48px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 35px;
 }
 .our-Learners .company-list {
   display: flex;
