@@ -32,3 +32,50 @@ img {
     width: 1170px;
   }
 }
+section {
+  padding: 60px 0;
+}
+.main-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.hero {
+  background: url(../images/course-hero.webp) center / cover;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+.hero h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--white);
+}
+.hero p {
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--white);
+}
+.hero form input {
+  display: block;
+  padding: 15px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+}
+.hero form .search-input {
+  width: 360px;
+  background-color: var(--white);
+  margin-bottom: 24px;
+}
+.hero form .submit-btn {
+  width: 240px;
+  margin: auto;
+  color: var(--white);
+  background-color: var(--black);
+}
