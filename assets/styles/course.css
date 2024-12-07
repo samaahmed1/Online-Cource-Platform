@@ -79,3 +79,31 @@ section {
   color: var(--white);
   background-color: var(--black);
 }
+.courses .container .courses-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 40px;
+}
+.courses .courses-list .course {
+  border: 1px solid rgb(0 0 0 / 0.1);
+  border-radius: 6px;
+  overflow: hidden;
+}
+.courses .courses-list .ai {
+  grid-column: 1 / -1;
+}
+.courses .courses-list .course img {
+  width: 100%;
+}
+.courses .courses-list .course .info {
+  padding: 12px;
+}
+.courses .courses-list .course .info h3 {
+  margin-bottom: 4px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.courses .courses-list .course .info span {
+  font-size: 20px;
+  font-weight: 500;
+}
