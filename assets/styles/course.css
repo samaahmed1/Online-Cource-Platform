@@ -122,9 +122,38 @@ section {
   border: 1px solid rgb(0 0 0 / 0.1);
   border-radius: 6px;
 }
+@media (max-width: 991px) {
+  .courses-details .courses-list {
+    justify-content: center;
+  }
+  .courses-details .courses-list .course {
+    margin: 0 15px;
+  }
+}
 .courses-details .courses-list .course .info h3 {
   margin-bottom: 8px;
 }
 .courses-details .courses-list .course .info p {
   line-height: 24px;
+}
+.courses-benefits .benefits-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+.courses-benefits .benefits-list .benefit {
+  text-align: center;
+}
+.courses-benefits .benefits-list .benefit h3 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 300;
+}
+.courses-benefits .benefits-list .benefit p {
+  font-size: 16px;
+  color: rgb(0 0 0 / 0.5);
+}
+.courses-benefits .benefits-list .benefit img {
+  width: 80px;
 }
