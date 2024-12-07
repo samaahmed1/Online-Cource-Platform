@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --black: #000000;
+  --white: #ffffff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.container {
+  padding: 0 15px;
+  margin: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+section {
+  padding: 60px 0;
+}
+hr {
+  border: 1px solid rgba(227, 227, 227, 0.559);
+}
+.main-title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+}
+.personal-information form .form-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 80px;
+}
+@media (max-width: 991px) {
+  .personal-information form .form-container {
+    justify-content: center;
+  }
+  .personal-information form .form-container .input-container {
+    margin: 0 15px;
+  }
+  .personal-information form .form-container .input-container .gender {
+    justify-content: center;
+    margin: 20px 0;
+  }
+  .personal-information form .form-container .input-container label {
+    text-align: center;
+  }
+}
+.personal-information form .form-container .input-container label {
+  display: block;
+  margin-bottom: 4px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.personal-information form .form-container .input-container input:not(input[type="radio"]) {
+  width: 100%;
+  padding: 15px;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(0 0 0 / 0.1);
+}
+.personal-information form .form-container .input-container .gender {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.personal-information form .form-container .input-container .gender label {
+  padding: 8px;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: rgb(0 0 0 / 0.05);
+  border-radius: 6px;
+}
+.personal-information form .form-container .input-container .gender input[type="radio"] {
+  appearance: none;
+}
+.personal-information form input[type="submit"] {
+  display: block;
+  width: 240px;
+  padding: 10px;
+  margin: auto;
+  color: var(--white);
+  background-color: var(--black);
+  border-radius: 6px;
+}

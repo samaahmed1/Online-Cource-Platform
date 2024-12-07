@@ -39,6 +39,45 @@
       </nav>
     </div>
   </header>
-  
+  <main>
+    <section class="personal-information">
+      <div class="container">
+        <h2 class="main-title">Personal Information</h2>
+        <form method="post">
+          <div class="form-container">
+            <div class="input-container">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="full-name" id="full-name" placeholder="Enter your full name" required autofocus />
+            </div>
+            <div class="input-container">
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" placeholder="Enter your email" required />
+            </div>
+            <div class="input-container">
+              <label for="phone-number">Phone Number</label>
+              <input type="text" name="phone-number" id="phone-number" placeholder="Enter your phone number" required />
+            </div>
+            <div class="input-container">
+              <label for="date-birth">Phone Number</label>
+              <input type="date" name="date-birth" id="date-birth" placeholder="Select your date birthr" required />
+            </div>
+            <div class="input-container">
+              <label>Gender</label>
+              <div class="gender">
+                <input type="radio" id="male" name="gender" />
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" />
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" />
+                <label for="other">Other</label>
+              </div>
+            </div>
+          </div>
+          <input type="submit" value="Next" />
+        </form>
+      </div>
+    </section>
+    <hr>
+  </main>
 </body>
 </html>
